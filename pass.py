@@ -1,7 +1,6 @@
 import os
 import win32api
-import ctypes
-
+ 
 
 home_path = os.environ["HOMEPATH"]
 windir = os.getenv("windir")
