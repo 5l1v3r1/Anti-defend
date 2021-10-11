@@ -1,4 +1,5 @@
-# Anti-defend
+# Anti-defend (educational)
+
 bütün güvenlik sistemlerini yok eder ve erişiminizi trustedinstaller olarak yürütür 
 (destroys all security systems and executes your access as trustedinstaller)
 
