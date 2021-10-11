@@ -1,5 +1,4 @@
-REM- Turn off UAC
-powershell.exe New-ItemProperty -Path HKLM:Software\Microsoft\Windows\CurrentVersion\policies\system -Name EnableLUA -PropertyType DWord -Value 0 -Force
+ 
 
 REM- Turning off security and app alerts
 powershell.exe New-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\PushNotifications -Name ToastEnabled  -PropertyType DWord -Value 0 -Force
