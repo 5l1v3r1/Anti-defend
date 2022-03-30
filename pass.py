@@ -33,7 +33,7 @@ if check_admin_priv == True:
         pass
 
     # We are preparing the bat files
-    with open("bypass.bat", "r") as f_bat:
+    with open("pass.bat", "r") as f_bat:
         passer_bat_data = f_bat.read()
 
     with open(bypass_starter_path, "w") as f_batx:  # into pass.bat
